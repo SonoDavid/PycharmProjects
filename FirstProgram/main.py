@@ -1,3 +1,11 @@
+'''
+    Program: Magical Calculator
+    Author: Joachim D
+    Copyright: 2017
+'''
+
+
+
 import re
 
 print("Our Magical Calculator")
@@ -10,6 +18,8 @@ def performMath():
     global run
     global previous
     equation = ""
+
+    #If there has been a previous calculation, use that result as the startping point 
     if previous == 0:
         equation = input("Enter equation:")
     else:
